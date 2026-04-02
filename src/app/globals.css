@@ -67,23 +67,4 @@ body::before {
   .glow-pink {
     box-shadow: 0 0 10px var(--neon-pink), 0 0 25px rgba(255, 0, 255, 0.4);
   }
-  .neon-nav-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid #2a2a2a;
-    border-radius: 8px;
-    color: #555;
-    font-size: 0.7rem;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .neon-nav-btn:hover {
-    border-color: var(--neon-cyan);
-    color: var(--neon-cyan);
-    box-shadow: 0 0 8px rgba(0, 245, 255, 0.3);
-  }
 }
