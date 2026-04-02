@@ -93,34 +93,29 @@ export default function OvertimeForm({ entry, defaultDate, onSave, onCancel }: P
             />
           </Field>
 
-          {/* 開始・終了時刻（flex で iOS でも安定） */}
-          <div className="flex items-end gap-2">
-            <div className="flex-1 min-w-0">
-              <Field label="START // 開始時刻">
-                <input
-                  type="time"
-                  value={startTime}
-                  onChange={(e) => setStartTime(e.target.value)}
-                  required
-                  className={inputClass}
-                  style={iosNormalize}
-                />
-              </Field>
-            </div>
-            <div className="pb-2.5 text-gray-600 font-mono text-sm shrink-0">→</div>
-            <div className="flex-1 min-w-0">
-              <Field label="END // 終了時刻">
-                <input
-                  type="time"
-                  value={endTime}
-                  onChange={(e) => setEndTime(e.target.value)}
-                  required
-                  className={inputClass}
-                  style={iosNormalize}
-                />
-              </Field>
-            </div>
-          </div>
+          {/* 開始時刻 */}
+          <Field label="START // 開始時刻">
+            <input
+              type="time"
+              value={startTime}
+              onChange={(e) => setStartTime(e.target.value)}
+              required
+              className={inputClass}
+              style={iosNormalize}
+            />
+          </Field>
+
+          {/* 終了時刻 */}
+          <Field label="END // 終了時刻">
+            <input
+              type="time"
+              value={endTime}
+              onChange={(e) => setEndTime(e.target.value)}
+              required
+              className={inputClass}
+              style={iosNormalize}
+            />
+          </Field>
 
           {/* 合計プレビュー */}
           {durationStr && (
